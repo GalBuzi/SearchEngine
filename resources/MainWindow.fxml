@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MainWindow">
+   <children>
+      <Label layoutX="191.0" layoutY="26.0" text="Search Engine" textFill="#8a4444">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_createIndex" layoutX="69.0" layoutY="77.0" mnemonicParsing="false" onAction="#CreateIndexFromScrach" text="Create Index" />
+      <Button fx:id="btn_reset" onAction="#resetSettings" layoutX="292.0" layoutY="159.0" mnemonicParsing="false" text="Reset Settings" />
+      <Button fx:id="btn_loadDictionaries" onAction="#loadDictionaries" layoutX="168.0" layoutY="159.0" mnemonicParsing="false" text="Load Dictionaries" />
+      <Button fx:id="btn_displayDict" onAction="#displayDictionary" layoutX="398.0" layoutY="159.0" mnemonicParsing="false" text="Display Dictionary" />
+      <RadioButton fx:id="radiobtn_queryUser" onAction="#radioBtnQueryUserClicked" layoutX="49.0" layoutY="200.0" mnemonicParsing="false" />
+      <RadioButton fx:id="radiobtn_queryFile" onAction="#radioBtnQueryFileClicked" layoutX="49.0" layoutY="234.0" mnemonicParsing="false" />
+      <TextField fx:id="txtfld_queryUser" layoutX="70.0" layoutY="196.0" prefHeight="25.0" prefWidth="302.0" promptText="Enter Your Query" />
+      <TextField fx:id="txtfld_queryFile" layoutX="70.0" layoutY="230.0" prefHeight="25.0" prefWidth="302.0" promptText="Enter Path to Query File" />
+      <Button fx:id="btn_run" onAction="#runQueries" layoutX="447.0" layoutY="191.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="38.0" text="Run" />
+      <Button fx:id="btn_browseQureyFile" onAction="#browseQueryFile" layoutX="383.0" layoutY="230.0" mnemonicParsing="false" text="Browse" />
+      <CheckBox fx:id="checkBox_semantics" layoutX="70.0" layoutY="278.0" mnemonicParsing="false" text="Semantics" />
+      <CheckBox fx:id="checkBox_semanticsOnline" layoutX="90.0" layoutY="295.0" mnemonicParsing="false" text="Online" />
+      <CheckBox fx:id="checkBox_stemming" onAction="#getStemmingOptionFromCheckbox" layoutX="80.0" layoutY="163.0" mnemonicParsing="false" text="Stemming" />
+      <Button fx:id="btn_getPath" onAction="#browsePathToFiles" layoutX="221.0" layoutY="116.0" mnemonicParsing="false" text="Browse" />
+      <TextField fx:id="txtfld_path"  layoutX="72.0" layoutY="116.0" prefHeight="25.0" prefWidth="147.0" promptText="Enter Path for Index Files" />
+   </children>
+</AnchorPane>

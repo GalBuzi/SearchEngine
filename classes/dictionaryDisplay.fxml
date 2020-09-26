@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="575.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Dictionary">
+   <children>
+      <Label layoutX="93.0" text="Dictionary">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <ListView fx:id="dicVals" layoutX="18.0" layoutY="80.0" prefHeight="476.0" prefWidth="348.0" />
+      <Label layoutX="18.0" layoutY="65.0" text="Term , Total Term Frequency" />
+   </children>
+</AnchorPane>

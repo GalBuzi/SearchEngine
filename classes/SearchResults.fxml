@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.SearchResults">
+   <children>
+      <ListView fx:id="resultList" layoutX="26.0" layoutY="142.0" prefHeight="173.0" prefWidth="133.0" />
+      <Label layoutX="26.0" layoutY="70.0" text="Select Query ID:" />
+      <ChoiceBox fx:id="queryId" layoutX="34.0" layoutY="87.0" prefHeight="25.0" prefWidth="69.0" />
+      <ListView fx:id="entites" layoutX="236.0" layoutY="142.0" prefHeight="173.0" prefWidth="313.0" />
+      <Label layoutX="236.0" layoutY="125.0" text="Top 5 Entities In Doc - Score" />
+      <Label layoutX="26.0" layoutY="125.0" text="Top Relevant Documents" />
+      <Label layoutX="178.0" layoutY="14.0" text="Search Results" textFill="#793b3b">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="path" layoutX="29.0" layoutY="353.0" prefHeight="25.0" prefWidth="165.0" promptText="Enter Path To Save File" />
+      <Label layoutX="29.0" layoutY="336.0" text="Save Results To TREC-EVAL File" />
+      <Button fx:id="btn_browseDir" layoutX="194.0" layoutY="353.0" mnemonicParsing="false" onAction="#loadPath" text="Browse" />
+      <Button fx:id="btn_save" layoutX="259.0" layoutY="353.0" mnemonicParsing="false" onAction="#saveQueryResultToFile" text="Save" />
+   </children>
+</AnchorPane>

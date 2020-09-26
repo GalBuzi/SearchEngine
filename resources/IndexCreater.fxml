@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="373.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.IndexCreater">
+   <children>
+      <CheckBox fx:id="cbox_stemming" layoutX="84.0" layoutY="185.0" mnemonicParsing="false" onAction="#getStemmingOptionFromCheckbox" text="Use Stemming" />
+      <Button fx:id="btn_browseCorpusAndSW" layoutX="537.0" layoutY="102.0" mnemonicParsing="false" onAction="#browseBtnToChooseCorpusAndStopWords" text="Browse" />
+      <Label layoutX="173.0" layoutY="26.0" prefHeight="17.0" prefWidth="381.0" text="Create Index">
+         <font>
+            <Font size="40.0" />
+         </font></Label>
+      <Button fx:id="btn_browseSavingFiles" layoutX="537.0" layoutY="139.0" mnemonicParsing="false" onAction="#browseBtnToChooseWhereToSaveFiles" text="Browse" />
+      <Button fx:id="btn_resetSettings" layoutX="84.0" layoutY="236.0" mnemonicParsing="false" onAction="#resetSettings" prefHeight="25.0" prefWidth="112.0" text="Reset Settings" />
+      <Button fx:id="btn_displayDictionary" layoutX="84.0" layoutY="280.0" mnemonicParsing="false" onAction="#displayDictionary" text="Display Dictionary" />
+      <Button fx:id="btn_loadDictionary" layoutX="84.0" layoutY="324.0" mnemonicParsing="false" onAction="#loadDictionary" prefHeight="25.0" prefWidth="112.0" text="Load Dictionary" />
+      <Button fx:id="btn_createInvertedIndex" layoutX="246.0" layoutY="280.0" mnemonicParsing="false" onAction="#startCreatingInvIdx" text="Create Inverted Index" />
+      <Button fx:id="btn_saveSettings" layoutX="239.0" layoutY="181.0" mnemonicParsing="false" onAction="#saveSettings" text="Save Settings" />
+      <TextField fx:id="txtfld_corpusDir" layoutX="72.0" layoutY="102.0" prefHeight="25.0" prefWidth="453.0" promptText="Please enter a path for corpus and stop words list by choosing the path --------&gt;" />
+      <TextField fx:id="txtfld_writingDir" layoutX="72.0" layoutY="139.0" prefHeight="25.0" prefWidth="453.0" promptText="Please enter a path for saving dictionary and posting files by choosing the path --&gt;" />
+
+   </children>
+</AnchorPane>
